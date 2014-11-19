@@ -54,6 +54,8 @@ GEM
     naught (1.0.0)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
+    octokit (3.5.2)
+      sawyer (~> 0.5.3)
     pry (0.9.12.6)
       coderay (~> 1.0)
       method_source (~> 0.8)
@@ -69,6 +71,9 @@ GEM
     rufus-scheduler (2.0.24)
       tzinfo (>= 0.3.22)
     sass (3.2.19)
+    sawyer (0.5.5)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
     simple_oauth (0.3.0)
     sinatra (1.4.5)
       rack (~> 1.4)
@@ -127,5 +132,6 @@ PLATFORMS
 
 DEPENDENCIES
   dashing
+  octokit
   travis
   twitter (>= 5.9.0)
