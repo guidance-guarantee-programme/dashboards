@@ -1,9 +1,27 @@
+<script type='text/javascript'>
+  $(function() {
+    // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+    Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,' +
+    '"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]');
+    Dashing.widget_base_dimensions = [400, 400];
+    Dashing.numColumns = 3;
+  });
+</script>
 <% content_for :title do %>Guidance Guarantee Programme<% end %>
 <div class="gridster">
   <ul>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="ci_travis_alpha" data-view="Travis" data-unordered="true" data-title="Alpha"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-view="Clock"></div>
+      <i class="icon-time icon-background"></i>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="ci_travis_register_your_interest" data-view="Travis" data-unordered="true" data-title="Register Your Interest"></div>
     </li>
 
   </ul>
