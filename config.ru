@@ -1,3 +1,4 @@
+require 'sinatra/cyclist'
 require 'dashing'
 
 use Rack::Auth::Basic, 'Dashboards' do |username, password|
@@ -18,5 +19,7 @@ end
 map Sinatra::Application.assets_prefix do
   run Sinatra::Application.sprockets
 end
+
+set :routes_to_cycle_through, [:ggp, :register_your_interest]
 
 run Sinatra::Application

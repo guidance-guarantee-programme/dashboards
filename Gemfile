@@ -4,6 +4,7 @@ gem 'activeresource'
 gem 'dashing'
 gem 'newrelic_api'
 gem 'octokit'
+gem 'sinatra_cyclist'
 gem 'travis'
 
 ## Remove this if you don't need a twitter widget.
