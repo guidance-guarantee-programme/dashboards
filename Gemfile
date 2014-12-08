@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'activeresource'
 gem 'dashing'
+gem 'newrelic_api'
 gem 'octokit'
 gem 'travis'
 

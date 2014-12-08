@@ -1,0 +1,32 @@
+<script type='text/javascript'>
+  $(function () {
+    // These settings override the defaults set in application.coffee. You can do this on a per dashboard basis.
+    Dashing.gridsterLayout('[{"col":2,"row":1},{"col":1,"row":1},{"col":3,"row":1},{"col":2,"row":2},{"col":3,' +
+    '"row":2},{"col":1,"row":2},{"col":5,"row":1},{"col":4,"row":2},{"col":2,"row":3}]');
+    Dashing.widget_base_dimensions = [400, 400];
+    Dashing.numColumns = 3;
+  });
+</script>
+<% content_for :title do %>Register Your Interest
+<% end %>
+<div class="gridster">
+  <ul>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="newrelic_Response_Time" data-id="newrelic_Response_Time" data-view="Newrelic" data-title="Response time" data-green="200" data-yellow="500" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="newrelic_Throughput" data-id="newrelic_Throughput" data-view="Newrelic" data-title="RPM" data-green="2000" data-yellow="2500" ></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="newrelic_Error_Rate" data-id="newrelic_Error_Rate" data-view="Newrelic" data-title="Error rate" data-green="1" data-yellow="3"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div id="newrelic_Apdex" data-id="newrelic_Apdex" data-view="Newrelic" data-title="Apdex" data-green="0.9" data-yellow="0.8" ></div>
+    </li>
+
+  </ul>
+</div>
