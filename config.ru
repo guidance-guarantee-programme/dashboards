@@ -1,5 +1,9 @@
 require 'dashing'
 
+use Rack::Auth::Basic, 'Dashboards' do |username, password|
+  [username, password] == [ENV['AUTH_USERNAME'], ENV['AUTH_PASSWORD']]
+end if production?
+
 configure do
   set :auth_token, 'YOUR_AUTH_TOKEN'
 
