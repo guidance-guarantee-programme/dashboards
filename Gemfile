@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'activeresource'
+gem 'bugsnag-api'
 gem 'dashing'
 gem 'newrelic_api'
 gem 'octokit'
